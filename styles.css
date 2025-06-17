@@ -13,6 +13,16 @@ body
      background-color: #c9a6ff;
 }
 
+.navbar-nav
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+
+
+}
+
 .nav-link
 {
      color: white;
