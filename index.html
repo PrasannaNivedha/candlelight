@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <title>Candle Light</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="fav.png">
 </head>
 
@@ -39,21 +39,111 @@
 </nav>
 
 <div id="home">
-    <img src="pagelogo.png" style="height:50vh">
-    <h1>Welcome to CandleLight</h1><br><h2>Handmade with love!</h2>
+    <img src="pagelogo.png" id="logo">
+    <h1 class="hovereffect">Welcome to CandleLight</h1><br><h2 class="hovereffect">Handmade with love!</h2>
 
 </div>
 
-<div id="aboutus">
-    
+<div id="aboutus" class="container">
+     <h2 class="hovereffect">Welcome to Candle Light, where warmth meets elegance.</h2>
+     <p class="hovereffect">Born from a love for cozy spaces and calming rituals, Candle Light was founded with a simple goal: to create candles that do more than just light a room — they transform it. Every candle we craft is hand-poured with care, using eco-friendly waxes, lead-free wicks, and unique fragrance blends that soothe the senses and spark emotion.</p>
+     <p class="hovereffect">Whether you’re winding down after a long day, setting the mood for a special moment, or gifting a loved one something meaningful — Candle Light is here to add that gentle glow.</p>
+     <p class="hovereffect">We believe in slow living, mindful making, and filling your home with comfort, one flicker at a time.</p>
+     <blockquote class="blockquote hovereffect">🕯️ "Crafted with soul. Lit with purpose."</blockquote>
+     <footer class="blockquote-footer hovereffect">The Candle Light Team</footer>   
 </div>
 
-<div id="gallery">
+<div id="gallery" >
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i1.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i2.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i3.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i4.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i5.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i6.png" style="width: 30vw"></div>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 hovereffect"><img src="i7.png" style="width: 30vw"></div>
+  </div>
     
 </div>
 
 <div id="contactus">
+
+  <div class="infor">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you!</p>
+
+    <p>Whether you have a question about our products, want to place a custom order, or simply want to say hello—feel free to reach out. We’re always here to help and ensure your Candle Light experience is nothing short of magical.</p>
+    <h3>📍 Address:</h3>
+    <p>Candle Light Studio,
+          <br>22 Serenity Lane,
+          <br>Coimbatore, Tamil Nadu – 641001, India</p>
+    <h3>📞 Phone:</h3>
+      <p>+91 98765 43210</p>
+    <h3>✉️ Email:</h3>
+    <a href="mailto:hello@candlelightstudio.in">hello@candlelightstudio.in</a>
+    <h3>🕒 Working Hours:</h3>
+    <p>Monday – Saturday: 10 AM – 6 PM
+        <br>(Sundays closed for creativity recharge ✨)</p>
     
+  </div>
+
+
+  <h2 style="margin: 50px 50px;">💬 Or simply fill out the form below and we’ll get back to you within 24 hours.</h2>
+          
+  <form id="contactform">
+    
+    <div class="formi">
+              
+      <label class="form-label" for="name">Name (full name) </label>
+      <input type="text" class="form-control" id="name" placeholder=" So we know who we're speaking to" required >
+
+      <label class="form-label" for="email">Email Addresss</label>
+      <input type="email" class="form-control" id="email" placeholder="To reply back" required >
+
+      <label class="form-label" for="phone">Phone Number</label>
+      <input type="number" class="form-control" id="phone" placeholder="In case you prefer a call or whatsapp message">
+
+      <label class="form-label" for="subject">Subject</label>
+      <input type="text" class="form-control" id="subject" maxlength="50" style="height:50px;" placeholder="Help us route the message (e.g. custom order, collaboration, bulk inquiry etc.)">
+
+      <label class="form-label" for="message">Message</label>
+      <input type="text" class="form-control" id="message"  maxlength="150" style="height: 100px;" placeholder="The heart of your query, suggestion or message" required>
+
+      <label class="form-check-label" for="subscribe">Subscribe to Our Newsletter</label>
+      <input type="checkbox" class="form-check-input" id="subscribe">
+      <br>
+      <button id="submit" style="margin:10px" class="btn btn-success hovereffect" >Send Message</button>
+            
+    </div>
+  </form>
+
+</div> 
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Thank You !</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Our Representative will connect with you shortly!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
 </div>
+
+
     
 </body>
